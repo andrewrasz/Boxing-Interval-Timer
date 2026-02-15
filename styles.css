@@ -128,3 +128,58 @@ h1 {
 .contact-list a:hover {
   text-decoration: underline;
 }
+
+/* App preview section (homepage) */
+.preview-label {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.preview-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.preview-fig {
+  margin: 0;
+  padding: 12px;
+  background: #1A1A1A;
+  border: 2px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  flex: 0 1 auto;
+}
+
+.preview-fig figcaption {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.preview-img {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 420px) {
+  .preview-grid {
+    flex-wrap: wrap;
+  }
+  .preview-img {
+    max-width: 140px;
+  }
+}
