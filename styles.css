@@ -159,6 +159,7 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   flex: 0 1 auto;
+  overflow: hidden;
 }
 
 .preview-fig figcaption {
@@ -174,6 +175,12 @@ h1 {
   max-width: 140px;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.35s ease;
+  transform-origin: center center;
+}
+
+.preview-fig:hover .preview-img {
+  transform: scale(1.12);
 }
 
 @media (max-width: 420px) {
